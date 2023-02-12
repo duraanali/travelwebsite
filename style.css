@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #2D2946;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.hero {
+    background-image: url(https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+    background-size: cover;
+    height: 500px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px
+}
+
+.box {
+    width: 30%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.box h2 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.box p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    background-color: aqua
+}
+
+.about img {
+    width: 40%;
+    height: auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.abouttext {
+    width: 60%;
+    margin: 0 20px
+}
+
+.abouttext p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+    text-align: justify
+}
+
+.newspaper {
+    background-color: #e7e7e7;
+    color: #2D2946;
+    padding: 30px;
+    text-align: center;
+}
+
+.newspaper h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.newspaper p {
+    font-size: 1rem;
+}
+
+.newspaper form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.newspaper input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-right: 5px;
+}
+
+.newspaper button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2D2946;
+    color: white;
+}
+
+.newspaper input:focus {
+    outline: none;
+}
+
+.newspaper button:hover {
+    background-color: #6f67c4;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2D2946;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* Media Query - Always at the bottom */
+
+@media (max-width: 640px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .boxes {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about img {
+        width: 100%;
+        height: auto;
+    }
+
+    .abouttext {
+        width: 100%;
+    }
+}
